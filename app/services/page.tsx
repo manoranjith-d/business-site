@@ -16,6 +16,7 @@ const services = [
         description: "Leverage the power of Artificial Intelligence to automate processes and gain insights.",
         details: ["Custom LLM Integration", "Chatbot Development", "Predictive Analytics", "Process Automation"],
         icon: Bot,
+        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
     },
     {
         id: "web",
@@ -23,6 +24,7 @@ const services = [
         description: "Build fast, secure, and scalable web applications using modern frameworks.",
         details: ["Next.js & React", "SaaS Platforms", "E-commerce Solutions", "Progressive Web Apps (PWA)"],
         icon: Globe,
+        image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80",
     },
     {
         id: "mobile",
@@ -30,6 +32,7 @@ const services = [
         description: "Reach your customers on their favorite devices with native and cross-platform apps.",
         details: ["iOS & Android", "React Native / Flutter", "App Store Optimization", "Mobile UI/UX"],
         icon: Smartphone,
+        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
     },
     {
         id: "desktop",
@@ -37,6 +40,7 @@ const services = [
         description: "Powerful desktop applications for high-performance requirements.",
         details: ["Windows & macOS", "Electron Apps", "Enterprise Software", "Offline Capabilities"],
         icon: Layout,
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
     },
     {
         id: "seo",
@@ -44,6 +48,7 @@ const services = [
         description: "Improve your online visibility and drive organic traffic to your business.",
         details: ["Technical SEO", "Content Strategy", "Local SEO", "Performance Optimization"],
         icon: Search,
+        image: "https://img.freepik.com/premium-vector/seo-search-engine-optimization-concept-vector-illustration_185038-486.jpg?w=1800",
     },
     {
         id: "custom",
@@ -51,6 +56,7 @@ const services = [
         description: "Tailored software built specifically for your unique business needs.",
         details: ["API Integration", "Legacy Modernization", "Cloud Migration", "Consulting"],
         icon: BarChart3,
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
     },
 ]
 
@@ -92,8 +98,12 @@ export default function ServicesPage() {
                                     </Link>
                                 </Button>
                             </div>
-                            <div className="flex-1 min-h-[300px] bg-slate-100 rounded-2xl w-full flex items-center justify-center text-slate-400">
-                                [Image: {service.title} Illustration]
+                            <div className="flex-1 min-h-[300px] bg-slate-100 rounded-2xl w-full overflow-hidden">
+                                <img
+                                    src={service.image}
+                                    alt={service.title}
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                         </div>
                     ))}

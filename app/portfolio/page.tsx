@@ -16,28 +16,28 @@ const projects = [
         category: "Web Application",
         description: "A real-time financial analytics dashboard for a leading investment firm.",
         tags: ["Next.js", "TypeScript", "D3.js"],
-        image: "bg-blue-100",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&q=80",
     },
     {
         title: "HealthCare AI Assistant",
         category: "AI Solution",
         description: "An AI-powered chatbot for patient triage and appointment scheduling.",
         tags: ["Python", "OpenAI API", "React"],
-        image: "bg-green-100",
+        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1000&q=80",
     },
     {
         title: "E-Commerce Platform",
         category: "Mobile App",
         description: "A cross-platform mobile app for a fashion retailer with AR try-on features.",
         tags: ["React Native", "Node.js", "ARKit"],
-        image: "bg-purple-100",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&q=80",
     },
     {
         title: "Logistics Tracker",
         category: "SaaS",
         description: "Global shipment tracking system with real-time updates and route optimization.",
         tags: ["Vue.js", "Firebase", "Google Maps API"],
-        image: "bg-orange-100",
+        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1000&q=80",
     },
 ]
 
@@ -57,8 +57,12 @@ export default function PortfolioPage() {
                 <div className="grid md:grid-cols-2 gap-8">
                     {projects.map((project, index) => (
                         <Card key={index} className="overflow-hidden group hover:shadow-lg transition-all duration-300">
-                            <div className={`aspect-video w-full ${project.image} flex items-center justify-center text-slate-500 font-medium`}>
-                                [Project Screenshot: {project.title}]
+                            <div className="aspect-video w-full overflow-hidden bg-slate-100">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                />
                             </div>
                             <CardHeader>
                                 <div className="flex justify-between items-start">

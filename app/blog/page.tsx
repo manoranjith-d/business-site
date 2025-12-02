@@ -18,7 +18,7 @@ const posts = [
         date: "October 15, 2023",
         author: "Alex Johnson",
         category: "AI & ML",
-        image: "bg-purple-100",
+        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
     },
     {
         slug: "optimizing-nextjs-performance",
@@ -27,7 +27,7 @@ const posts = [
         date: "November 2, 2023",
         author: "Sarah Williams",
         category: "Web Development",
-        image: "bg-blue-100",
+        image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
     },
     {
         slug: "building-resilient-microservices",
@@ -36,7 +36,7 @@ const posts = [
         date: "November 20, 2023",
         author: "David Chen",
         category: "Architecture",
-        image: "bg-green-100",
+        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
     },
     {
         slug: "ux-trends-2024",
@@ -45,7 +45,7 @@ const posts = [
         date: "December 5, 2023",
         author: "Emily Davis",
         category: "Design",
-        image: "bg-orange-100",
+        image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80",
     },
 ]
 
@@ -64,9 +64,13 @@ export default function BlogPage() {
             <Container className="py-20">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {posts.map((post, index) => (
-                        <Card key={index} className="flex flex-col h-full hover:shadow-lg transition-all duration-300 group cursor-pointer">
-                            <div className={`aspect-video w-full ${post.image} flex items-center justify-center text-slate-500 font-medium`}>
-                                [Blog Image]
+                        <Card key={index} className="flex flex-col h-full hover:shadow-lg transition-all duration-300 group cursor-pointer overflow-hidden">
+                            <div className="aspect-video w-full overflow-hidden bg-slate-100">
+                                <img
+                                    src={post.image}
+                                    alt={post.title}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                />
                             </div>
                             <CardHeader>
                                 <div className="flex items-center gap-4 text-xs text-muted-foreground mb-2">

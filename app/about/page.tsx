@@ -34,8 +34,12 @@ export default function AboutPage() {
                             </p>
                         </div>
                     </div>
-                    <div className="bg-slate-100 rounded-2xl aspect-video w-full flex items-center justify-center text-slate-400">
-                        [Image Placeholder: Team working together]
+                    <div className="bg-slate-100 rounded-2xl aspect-video w-full overflow-hidden">
+                        <img
+                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
+                            alt="Team collaboration at ReliableSoft Solutions"
+                            className="w-full h-full object-cover"
+                        />
                     </div>
                 </div>
 

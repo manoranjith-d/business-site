@@ -18,7 +18,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             />
         )
     }
-)
+) as React.ForwardRefExoticComponent<InputProps & React.RefAttributes<HTMLInputElement>>
 Input.displayName = "Input"
 
 export { Input }

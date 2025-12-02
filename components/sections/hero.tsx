@@ -53,7 +53,7 @@ export function Hero() {
                         </div>
                     </motion.div>
 
-                    {/* Animated Illustration */}
+                    {/* Animated Taglines Showcase */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -61,62 +61,237 @@ export function Hero() {
                         className="relative hidden lg:block"
                     >
                         <div className="relative w-full aspect-square max-w-[600px] mx-auto">
-                            {/* Floating Cards */}
-                            <motion.div
-                                animate={{ y: [0, -20, 0] }}
-                                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                                className="absolute top-10 right-10 p-6 bg-white/80 backdrop-blur-xl border rounded-2xl shadow-2xl z-20 max-w-[240px]"
-                            >
-                                <div className="flex items-center gap-4 mb-4">
-                                    <div className="p-3 bg-blue-100 rounded-lg text-blue-600">
-                                        <Cpu className="w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <div className="font-semibold">AI Solutions</div>
-                                        <div className="text-xs text-muted-foreground">Smart Automation</div>
-                                    </div>
-                                </div>
-                                <div className="h-2 bg-slate-100 rounded-full w-full overflow-hidden">
-                                    <motion.div
-                                        initial={{ width: 0 }}
-                                        animate={{ width: "85%" }}
-                                        transition={{ duration: 1.5, delay: 1 }}
-                                        className="h-full bg-blue-500 rounded-full"
-                                    />
-                                </div>
-                            </motion.div>
-
-                            <motion.div
-                                animate={{ y: [0, 20, 0] }}
-                                transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                                className="absolute bottom-20 left-10 p-6 bg-white/80 backdrop-blur-xl border rounded-2xl shadow-2xl z-20 max-w-[240px]"
-                            >
-                                <div className="flex items-center gap-4 mb-4">
-                                    <div className="p-3 bg-cyan-100 rounded-lg text-cyan-600">
-                                        <Globe className="w-6 h-6" />
-                                    </div>
-                                    <div>
-                                        <div className="font-semibold">Web Apps</div>
-                                        <div className="text-xs text-muted-foreground">Scalable & Fast</div>
-                                    </div>
-                                </div>
-                                <div className="flex gap-2">
-                                    <div className="h-8 w-8 rounded-full bg-slate-100 border-2 border-white" />
-                                    <div className="h-8 w-8 rounded-full bg-slate-100 border-2 border-white -ml-4" />
-                                    <div className="h-8 w-8 rounded-full bg-slate-100 border-2 border-white -ml-4 flex items-center justify-center text-xs font-medium text-slate-600">
-                                        +5
-                                    </div>
-                                </div>
-                            </motion.div>
-
-                            {/* Central Element */}
+                            {/* Background Glow */}
                             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-cyan-500/10 rounded-full blur-3xl" />
-                            <div className="absolute inset-10 border border-slate-200/50 rounded-full animate-[spin_60s_linear_infinite]" />
-                            <div className="absolute inset-20 border border-slate-200/50 rounded-full animate-[spin_40s_linear_infinite_reverse]" />
 
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-8 bg-white rounded-3xl shadow-xl border">
-                                <Code2 className="w-16 h-16 text-primary" />
-                            </div>
+                            {/* Floating Tagline Card 1 - Top Right */}
+                            <motion.div
+                                initial={{ opacity: 0, x: 100, y: -50 }}
+                                animate={{
+                                    opacity: 1,
+                                    x: 0,
+                                    y: 0,
+                                }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: 0.5,
+                                    type: "spring",
+                                    stiffness: 100
+                                }}
+                                className="absolute top-8 right-0 z-20"
+                            >
+                                <motion.div
+                                    animate={{ y: [0, -15, 0] }}
+                                    transition={{
+                                        duration: 4,
+                                        repeat: Infinity,
+                                        ease: "easeInOut"
+                                    }}
+                                    className="p-5 bg-white/90 backdrop-blur-xl border border-blue-100 rounded-2xl shadow-2xl shadow-blue-500/20 max-w-[220px]"
+                                >
+                                    <div className="flex items-center gap-3 mb-3">
+                                        <div className="p-2.5 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg">
+                                            <Cpu className="w-5 h-5 text-white" />
+                                        </div>
+                                        <div>
+                                            <div className="font-bold text-sm text-slate-800">AI Solutions</div>
+                                            <div className="text-xs text-slate-500">Smart & Efficient</div>
+                                        </div>
+                                    </div>
+                                    <div className="space-y-1.5">
+                                        <div className="flex items-center justify-between text-xs">
+                                            <span className="text-slate-600">Automation</span>
+                                            <span className="font-semibold text-blue-600">95%</span>
+                                        </div>
+                                        <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                                            <motion.div
+                                                initial={{ width: 0 }}
+                                                animate={{ width: "95%" }}
+                                                transition={{ duration: 1.5, delay: 1.2 }}
+                                                className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"
+                                            />
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            </motion.div>
+
+                            {/* Floating Tagline Card 2 - Left Middle */}
+                            <motion.div
+                                initial={{ opacity: 0, x: -100, y: 0 }}
+                                animate={{
+                                    opacity: 1,
+                                    x: 0,
+                                    y: 0,
+                                }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: 0.7,
+                                    type: "spring",
+                                    stiffness: 100
+                                }}
+                                className="absolute top-1/3 left-0 z-20"
+                            >
+                                <motion.div
+                                    animate={{ y: [0, 15, 0], x: [0, -10, 0] }}
+                                    transition={{
+                                        duration: 5,
+                                        repeat: Infinity,
+                                        ease: "easeInOut",
+                                        delay: 0.5
+                                    }}
+                                    className="p-5 bg-white/90 backdrop-blur-xl border border-cyan-100 rounded-2xl shadow-2xl shadow-cyan-500/20 max-w-[220px]"
+                                >
+                                    <div className="flex items-center gap-3 mb-3">
+                                        <div className="p-2.5 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-lg">
+                                            <Globe className="w-5 h-5 text-white" />
+                                        </div>
+                                        <div>
+                                            <div className="font-bold text-sm text-slate-800">Web Development</div>
+                                            <div className="text-xs text-slate-500">Fast & Scalable</div>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <div className="flex -space-x-2">
+                                            <div className="w-7 h-7 rounded-full bg-gradient-to-br from-orange-400 to-orange-500 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">
+                                                R
+                                            </div>
+                                            <div className="w-7 h-7 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">
+                                                N
+                                            </div>
+                                            <div className="w-7 h-7 rounded-full bg-gradient-to-br from-green-400 to-green-500 border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">
+                                                V
+                                            </div>
+                                        </div>
+                                        <span className="text-xs text-slate-600 font-medium">Modern Stack</span>
+                                    </div>
+                                </motion.div>
+                            </motion.div>
+
+                            {/* Floating Tagline Card 3 - Bottom Right */}
+                            <motion.div
+                                initial={{ opacity: 0, x: 80, y: 80 }}
+                                animate={{
+                                    opacity: 1,
+                                    x: 0,
+                                    y: 0,
+                                }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: 0.9,
+                                    type: "spring",
+                                    stiffness: 100
+                                }}
+                                className="absolute bottom-12 right-8 z-20"
+                            >
+                                <motion.div
+                                    animate={{ y: [0, -12, 0], rotate: [0, 2, 0, -2, 0] }}
+                                    transition={{
+                                        duration: 6,
+                                        repeat: Infinity,
+                                        ease: "easeInOut",
+                                        delay: 1
+                                    }}
+                                    className="p-5 bg-white/90 backdrop-blur-xl border border-purple-100 rounded-2xl shadow-2xl shadow-purple-500/20 max-w-[200px]"
+                                >
+                                    <div className="flex items-center gap-3 mb-3">
+                                        <div className="p-2.5 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg">
+                                            <Code2 className="w-5 h-5 text-white" />
+                                        </div>
+                                        <div>
+                                            <div className="font-bold text-sm text-slate-800">Cloud Solutions</div>
+                                            <div className="text-xs text-slate-500">Always Available</div>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <div className="text-center">
+                                            <div className="text-2xl font-bold text-purple-600">99.9%</div>
+                                            <div className="text-[10px] text-slate-500">Uptime</div>
+                                        </div>
+                                        <div className="h-8 w-px bg-slate-200" />
+                                        <div className="text-center">
+                                            <div className="text-2xl font-bold text-purple-600">24/7</div>
+                                            <div className="text-[10px] text-slate-500">Support</div>
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            </motion.div>
+
+                            {/* Floating Tagline Card 4 - Bottom Left */}
+                            <motion.div
+                                initial={{ opacity: 0, x: -80, y: 60 }}
+                                animate={{
+                                    opacity: 1,
+                                    x: 0,
+                                    y: 0,
+                                }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: 1.1,
+                                    type: "spring",
+                                    stiffness: 100
+                                }}
+                                className="absolute bottom-24 left-4 z-20"
+                            >
+                                <motion.div
+                                    animate={{ y: [0, 10, 0], x: [0, 8, 0] }}
+                                    transition={{
+                                        duration: 5.5,
+                                        repeat: Infinity,
+                                        ease: "easeInOut",
+                                        delay: 1.5
+                                    }}
+                                    className="p-4 bg-white/90 backdrop-blur-xl border border-emerald-100 rounded-2xl shadow-2xl shadow-emerald-500/20 max-w-[180px]"
+                                >
+                                    <div className="text-center">
+                                        <div className="inline-flex p-2.5 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg mb-2">
+                                            <ArrowRight className="w-5 h-5 text-white" />
+                                        </div>
+                                        <div className="font-bold text-sm text-slate-800 mb-1">Mobile Apps</div>
+                                        <div className="text-xs text-slate-500">iOS & Android</div>
+                                        <div className="mt-3 flex justify-center gap-1">
+                                            {[1, 2, 3, 4, 5].map((star) => (
+                                                <motion.div
+                                                    key={star}
+                                                    initial={{ scale: 0 }}
+                                                    animate={{ scale: 1 }}
+                                                    transition={{ delay: 1.5 + star * 0.1 }}
+                                                >
+                                                    <svg className="w-3 h-3 fill-yellow-400" viewBox="0 0 20 20">
+                                                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                                    </svg>
+                                                </motion.div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            </motion.div>
+
+                            {/* Central Icon with Pulse */}
+                            <motion.div
+                                initial={{ scale: 0, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                transition={{ duration: 0.6, delay: 0.3 }}
+                                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
+                            >
+                                <motion.div
+                                    animate={{ scale: [1, 1.1, 1] }}
+                                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                                    className="p-8 bg-white rounded-3xl shadow-xl border-2 border-slate-100"
+                                >
+                                    <Code2 className="w-16 h-16 text-primary" />
+                                </motion.div>
+                                {/* Pulse rings */}
+                                <motion.div
+                                    animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
+                                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                                    className="absolute inset-0 border-2 border-primary rounded-3xl"
+                                />
+                                <motion.div
+                                    animate={{ scale: [1, 1.8, 1], opacity: [0.3, 0, 0.3] }}
+                                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                                    className="absolute inset-0 border-2 border-primary rounded-3xl"
+                                />
+                            </motion.div>
                         </div>
                     </motion.div>
                 </div>

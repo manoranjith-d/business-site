@@ -36,8 +36,8 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="font-medium">Email Us</p>
-                                        <p className="text-muted-foreground">hello@reliablesoft.com</p>
-                                        <p className="text-muted-foreground">support@reliablesoft.com</p>
+                                        {/* <p className="text-muted-foreground">hello@reliablesoft.com</p> */}
+                                        <p className="text-muted-foreground">manoranjith2201@outlook.com</p>
                                     </div>
                                 </div>
 
@@ -47,8 +47,8 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="font-medium">Call Us</p>
-                                        <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                                        <p className="text-muted-foreground">+1 (555) 987-6543</p>
+                                        <p className="text-muted-foreground">+91 9092171633</p>
+                                        <p className="text-muted-foreground">+91 6374440425</p>
                                     </div>
                                 </div>
 
@@ -59,8 +59,8 @@ export default function ContactPage() {
                                     <div>
                                         <p className="font-medium">Visit Us</p>
                                         <p className="text-muted-foreground">
-                                            123 Tech Park, Innovation Street,<br />
-                                            Silicon Valley, CA 94025
+                                            832, Jain Cambrae East Apartment<br />
+                                            Peelamedu, Coimbatore - 641014
                                         </p>
                                     </div>
                                 </div>
@@ -80,7 +80,9 @@ export default function ContactPage() {
 
                         {/* Map Placeholder */}
                         <div className="bg-slate-100 rounded-2xl aspect-video w-full flex items-center justify-center text-slate-400">
-                            [Interactive Map Placeholder]
+                            {/* [Interactive Map Placeholder]
+                             */}
+                            <img src="https://conocedores.com/wp-content/uploads/2016/06/googlemapslogo.jpg" alt="Google Maps" />
                         </div>
                     </div>
 

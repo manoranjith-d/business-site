@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export const metadata: Metadata = {
     title: "Careers",
-    description: "Join our team of innovators and engineers at ReliableSoft Solutions.",
+    description: "Join our team of innovators and engineers at NewGenix Solutions.",
 }
 
 const positions = [

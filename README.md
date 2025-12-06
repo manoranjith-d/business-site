@@ -1,4 +1,4 @@
-# ReliableSoft Solutions - Business Website
+# NewGenix Solutions - Business Website
 
 A modern, SEO-optimized business website built with Next.js 14, React, TypeScript, and Tailwind CSS.
 
@@ -74,7 +74,7 @@ npm run deploy
 ## 📁 Project Structure
 
 ```
-reliablesoft-solutions/
+NewGenix-solutions/
 ├── app/                    # Next.js App Router pages
 │   ├── about/             # About page
 │   ├── blog/              # Blog listing

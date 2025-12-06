@@ -16,25 +16,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "ReliableSoft Solutions | Engineering Excellence",
-    template: "%s | ReliableSoft Solutions",
+    default: "NewGenix Solutions | Engineering Excellence",
+    template: "%s | NewGenix Solutions",
   },
-  description: "ReliableSoft Solutions offers end-to-end software solutions, specializing in AI, web, and mobile app development with a focus on quality and innovation.",
-  keywords: ["Software Development", "AI Solutions", "Web Development", "Mobile Apps", "SaaS", "Engineering", "ReliableSoft"],
-  authors: [{ name: "ReliableSoft Solutions" }],
-  creator: "ReliableSoft Solutions",
+  description: "NewGenix Solutions offers end-to-end software solutions, specializing in AI, web, and mobile app development with a focus on quality and innovation.",
+  keywords: ["Software Development", "AI Solutions", "Web Development", "Mobile Apps", "SaaS", "Engineering", "NewGenix"],
+  authors: [{ name: "NewGenix Solutions" }],
+  creator: "NewGenix Solutions",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://reliablesoft.solutions",
-    title: "ReliableSoft Solutions | Engineering Excellence",
-    description: "ReliableSoft Solutions offers end-to-end software solutions, specializing in AI, web, and mobile app development.",
-    siteName: "ReliableSoft Solutions",
+    url: "https://NewGenix.solutions",
+    title: "NewGenix Solutions | Engineering Excellence",
+    description: "NewGenix Solutions offers end-to-end software solutions, specializing in AI, web, and mobile app development.",
+    siteName: "NewGenix Solutions",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ReliableSoft Solutions | Engineering Excellence",
-    description: "ReliableSoft Solutions offers end-to-end software solutions, specializing in AI, web, and mobile app development.",
+    title: "NewGenix Solutions | Engineering Excellence",
+    description: "NewGenix Solutions offers end-to-end software solutions, specializing in AI, web, and mobile app development.",
   },
 };
 

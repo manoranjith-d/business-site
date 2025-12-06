@@ -14,7 +14,7 @@ export function Footer() {
                                 R
                             </div>
                             <span className="text-xl font-bold tracking-tight text-foreground">
-                                ReliableSoft
+                                NewGenix
                             </span>
                         </Link>
                         <p className="text-muted-foreground text-sm leading-relaxed">
@@ -74,7 +74,7 @@ export function Footer() {
                 </div>
 
                 <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-                    <p>&copy; {new Date().getFullYear()} ReliableSoft Solutions. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} NewGenix Solutions. All rights reserved.</p>
                     <div className="flex items-center gap-6">
                         <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
                         <Link href="#" className="hover:text-primary transition-colors">Terms of Service</Link>

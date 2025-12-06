@@ -1,4 +1,4 @@
-# ReliableSoft Solutions - Image Assets Guide
+# NewGenix Solutions - Image Assets Guide
 
 ## 📸 Free High-Quality Images from Unsplash
 

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://reliablesoft.solutions/sitemap.xml',
+        sitemap: 'https://NewGenix.in/sitemap.xml',
     }
 }

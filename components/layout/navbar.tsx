@@ -51,7 +51,7 @@ export function Navbar() {
                             R
                         </div>
                         <span className="text-xl font-bold tracking-tight text-foreground">
-                            ReliableSoft
+                            NewGenix
                         </span>
                     </Link>
 

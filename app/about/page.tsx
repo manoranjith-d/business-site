@@ -4,7 +4,7 @@ import { CheckCircle2 } from "lucide-react"
 
 export const metadata: Metadata = {
     title: "About Us",
-    description: "Learn about ReliableSoft Solutions, our mission, vision, and engineering principles.",
+    description: "Learn about NewGenix Solutions, our mission, vision, and engineering principles.",
 }
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
             {/* Header */}
             <section className="bg-slate-50 py-20 border-b border-slate-100">
                 <Container>
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">About ReliableSoft</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">About NewGenix</h1>
                     <p className="text-xl text-muted-foreground max-w-3xl">
                         We are a team of passionate engineers, designers, and strategists dedicated to building the future of software.
                     </p>
@@ -27,7 +27,7 @@ export default function AboutPage() {
                         <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                         <div className="space-y-4 text-muted-foreground leading-relaxed">
                             <p>
-                                Founded with a vision to bridge the gap between complex technology and user-friendly solutions, ReliableSoft Solutions has grown into a trusted partner for businesses worldwide.
+                                Founded with a vision to bridge the gap between complex technology and user-friendly solutions, NewGenix Solutions has grown into a trusted partner for businesses worldwide.
                             </p>
                             <p>
                                 We believe that great software is not just about code; it's about understanding the human problem it solves. Our journey began with a simple idea: to deliver reliability in an unreliable world.
@@ -37,7 +37,7 @@ export default function AboutPage() {
                     <div className="bg-slate-100 rounded-2xl aspect-video w-full overflow-hidden">
                         <img
                             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
-                            alt="Team collaboration at ReliableSoft Solutions"
+                            alt="Team collaboration at NewGenix Solutions"
                             className="w-full h-full object-cover"
                         />
                     </div>

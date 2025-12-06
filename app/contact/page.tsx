@@ -8,7 +8,7 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
     title: "Contact Us",
-    description: "Get in touch with ReliableSoft Solutions for your software development needs.",
+    description: "Get in touch with NewGenix Solutions for your software development needs.",
 }
 
 export default function ContactPage() {
@@ -36,7 +36,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="font-medium">Email Us</p>
-                                        {/* <p className="text-muted-foreground">hello@reliablesoft.com</p> */}
+                                        {/* <p className="text-muted-foreground">hello@NewGenix.com</p> */}
                                         <p className="text-muted-foreground">manoranjith2201@outlook.com</p>
                                     </div>
                                 </div>

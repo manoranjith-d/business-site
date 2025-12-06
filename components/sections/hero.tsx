@@ -36,7 +36,7 @@ export function Hero() {
                         </h1>
 
                         <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
-                            ReliableSoft Solutions builds scalable, robust, and high-performance software tailored to your business needs. We turn complex problems into elegant solutions.
+                            NewGenix Solutions builds scalable, robust, and high-performance software tailored to your business needs. We turn complex problems into elegant solutions.
                         </p>
 
                         <div className="flex flex-wrap gap-4">

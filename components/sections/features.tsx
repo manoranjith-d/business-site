@@ -33,7 +33,7 @@ export function Features() {
             <Container>
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
-                        Why Choose ReliableSoft?
+                        Why Choose NewGenix?
                     </h2>
                     <p className="text-lg text-muted-foreground">
                         We combine technical expertise with business acumen to deliver software that drives growth.

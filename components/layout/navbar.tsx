@@ -48,7 +48,7 @@ export function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 group">
                         <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary/30 group-hover:scale-105 transition-transform">
-                            R
+                            N
                         </div>
                         <span className="text-xl font-bold tracking-tight text-foreground">
                             NewGenix

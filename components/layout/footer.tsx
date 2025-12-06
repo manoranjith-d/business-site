@@ -11,7 +11,7 @@ export function Footer() {
                     <div className="space-y-4">
                         <Link href="/" className="flex items-center gap-2">
                             <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary/30">
-                                R
+                                N
                             </div>
                             <span className="text-xl font-bold tracking-tight text-foreground">
                                 NewGenix
